@@ -28,7 +28,7 @@ $my_str = "nguyen the hieu";
 //echo implode(",", $list_id);
 
 #explode
-$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
-$pieces = explode(" ", $pizza);
-echo $pieces[3];
+//$pizza  = "piece1 piece2 piece3 piece4 piece5 piece6";
+//$pieces = explode(" ", $pizza);
+//echo $pieces[3];
 //print_r($pieces);

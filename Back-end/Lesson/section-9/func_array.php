@@ -20,6 +20,6 @@
 //echo in_array(1,$my_array);
 
 #is_array
-$my_var = 1;
-$my_array = array(1,2,5,8);
-echo is_array($my_array);
+//$my_var = 1;
+//$my_array = array(1,2,5,8);
+//echo is_array($my_array);

@@ -7,6 +7,6 @@
 //echo min (2,-1,5);
 //echo sqrt(5);
 //echo rand();
-echo round(1.56);
+//echo round(1.56);
 
 
