@@ -1,5 +1,9 @@
 <?php
-require 'lib/validation.php';
+ob_start();
+session_start();
+//Thiết lập khi login thành công 
+//$is_login = true;
+
 if (isset($_POST['btn_login'])) {
     //Phất cờ
     $error = array();
@@ -22,16 +26,26 @@ if (isset($_POST['btn_login'])) {
         //Hạ cờ
         $error['password'] = "Không được để trống trường Password";
     } else {
-        if (!is_password($_POST['password'])) {
+        $partten = "/^([A-Z]){1}([\w_.!@#$%^&*()]+){5,31}$/";
+        if (!preg_match($partten, $_POST['password']))
             $error['password'] = "Password cho phép sử dụng chữ cái , chữ số, và ký tự đặc biệt, bắt đầu ký tự viết hoa và có độ dài từ 6 đến 32 ký tự";
-        } else {
+        else {
             $password = $_POST['password'];
         }
     }
     //Kết luận
     if (empty($error)) {
-        //Xử lý không có lỗi
-        echo "Username: {$username} <br> Password: {$password}";
+        $data = array(
+            'username' => 'unitop',
+            'password' => 'Hieu123@'
+        );
+        if (($username == $data['username']) && ($password == $data['password'])) {
+            $_SESSION['is_login'] = true;
+            $_SESSION['user_login'] = 'unitop';
+            header("Location: index.php");
+        } else {
+            echo "Thông tin tài khoản không tồn tại trên hệ thống ";
+        }
     }
 }
 ?>
@@ -48,7 +62,7 @@ if (isset($_POST['btn_login'])) {
         <h1>Đăng nhập</h1>
         <form action="" method="POST">
             <label for="username">Username </label><br>
-            <input type="text" name="username" id="username" /><br><!-- comment -->
+            <input type="text" name="username" id="username" /><br> 
             <p class="error"><?php if (!empty($error['username'])) echo $error['username']; ?></p>
             <label for="password">Password</label><br>
             <input type="password" name="password" id="password"/><br>
@@ -58,5 +72,7 @@ if (isset($_POST['btn_login'])) {
         </form>
     </body>
 </html>
+
+
 
 
