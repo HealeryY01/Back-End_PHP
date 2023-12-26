@@ -1,0 +1,18 @@
+<?php
+require 'data/users.php';
+require 'lib/template.php';
+?>
+<?php
+$page = !empty($_GET['page']) ? $_GET['page'] : 'home';
+$path = "pages/{$page}.php";
+//echo $path;
+if (file_exists($path)) {
+    require $path;
+} else {
+    require 'inc/404.php';
+}
+?>
+
+
+
+
