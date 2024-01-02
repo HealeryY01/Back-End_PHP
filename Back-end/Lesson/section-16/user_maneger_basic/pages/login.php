@@ -20,7 +20,7 @@ if (isset($_POST['btn-login'])) {
     if (empty($_POST['password'])) {
         $error['password'] = "Không được để trống trường Password";
     } else {
-        $partten = "/^[A-Za-z0-9_\.!@#$%^&*()]{6,32}$/"; 
+        $partten = "/^[A-Za-z0-9_\.!@#$%^&*()]{6,32}$/";
         if (!preg_match($partten, $_POST['password']))
             $error['password'] = "Password cho phép sử dụng chữ cái , chữ số, và ký tự đặc biệt, bắt đầu ký tự viết hoa và có độ dài từ 6 đến 32 ký tự";
         else {
@@ -29,16 +29,14 @@ if (isset($_POST['btn-login'])) {
     }
     //Kết luận
     if (empty($error)) {
-        $data = array(
-            'username' => 'unitop',
-            'password' => 'Hieu123@'
-        );
-        if (($username == $data['username']) && ($password == $data['password'])) {
-            $_SESSION['is_login'] = true;
-            $_SESSION['user_login'] = 'unitop';
-            header("Location: index.php");
+        if (check_login($username, $password )) {
+            //Lưu trữ phiên đăng nhập 
+               $_SESSION['is_login']=true;
+               $_SESSION['user_login']=$username;
+               //Chuyển hướng vào trong hệ thống
+               redirect("?page=home");
         } else {
-            echo "Thông tin tài khoản không tồn tại trên hệ thống ";
+          $error['account'] = "Username hoặc Password không tồn tại trên hệ thống ";
         }
     }
 }
@@ -59,6 +57,7 @@ if (isset($_POST['btn-login'])) {
                 <input type="password" name="password" value="" id="password" placeholder="Password"/>
                 <p class="error"><?php if (!empty($error['password'])) echo $error['password']; ?></p>
                 <input type="submit" id="btn-login" name="btn-login" value="Đăng nhập" />
+                <p class="error"><?php if (!empty($error['account'])) echo $error['account']; ?></p>
             </form>
             <a href="" id="lost-pass">Quên mật khẩu?</a>
         </div>

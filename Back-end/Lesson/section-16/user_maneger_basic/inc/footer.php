@@ -1,5 +1,5 @@
 <div id="footer">
-    <p>Healer</p>
+    <p>Healer/hy</p>
 </div>
 </div>
 </body>

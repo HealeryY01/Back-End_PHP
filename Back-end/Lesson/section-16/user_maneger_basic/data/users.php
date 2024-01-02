@@ -12,21 +12,21 @@ $list_users = array(
     1 => array(
         'id'=> 1,
         'fullname' =>'Nguyễn Thế Hiệu',
-        'username' => 'healer',
+        'username' => 'healer123',
         'password' => md5('hieu123@'),
         'email' => 'nguyenthehieua2001@gmail.com'
     ),
     2 => array(
         'id'=> 2,
         'fullname' =>'Nguyễn Thị Hải Yến',
-        'username' => 'bo dao',
+        'username' => 'bodao1109',
         'password' => md5('yen123@'),
         'email' => 'haiyenn@gmail.com'
     ),
     3 => array(
         'id'=> 3,
         'fullname' =>'Nguyễn Thị Quỳnh Chi',
-        'username' => 'cun',
+        'username' => 'cun17314',
         'password' => md5('chi2014'),
         'email' => 'cunchi@gmail.com'
     ),

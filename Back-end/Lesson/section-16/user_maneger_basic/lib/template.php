@@ -26,16 +26,3 @@ function get_sidebar() {
         echo"Không tồn tại đường dẫn ($path_sidebar) ";
     }
 }
-function is_username($username) {
-    $partten = "/^[A-Za-z0-9_\.]{6,32}$/";
-    if (!preg_match($partten, $username))
-        return false;
-    return true;
-}
-
-function is_password($password) {
-    $partten = "/^([A-Z]){1}([\w_.!@#$%^&*()]+){5,31}$/";
-    if (!preg_match($partten, $password))
-        return false;
-    return true;
-}

@@ -8,8 +8,12 @@
         <div id="wrapper">
             <div id="header">
                 <a id="logo">HEADER</a>
-                <div id="user-login">
-                    <p>Xin chào <strong>Admin</strong> (<a href="" style="text-decoration: none;">Thoát</a>)</p>
+                <div id="user-login">                  
+                    <p>Xin chào <strong><?php
+                            if (is_login()) {
+                                echo info_user('fullname');
+                            }
+                            ?></strong> (<a href="?page=logout" style="text-decoration: none;">Thoát</a>)</p>
                 </div>
                 <ul id="main-menu">
                     <li><a href="?page=home">Trang chủ</a></li>
