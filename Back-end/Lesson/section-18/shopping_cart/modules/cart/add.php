@@ -1,7 +1,8 @@
 <?php
 
-/* 
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
-
+#Lấy được thông tin sản phẩm vào giỏ hàng
+$id = (int) $_GET['id'];
+add_cart($id);
+//show_array($_SESSION['cart']);
+redirect('?mod=cart&act=show');
+?>

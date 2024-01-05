@@ -25,7 +25,8 @@ function get_list_product_by_cat_id($cat_id) {
 function get_product_by_id($id){
      global $list_product;
      if(array_key_exists($id, $list_product)){
-         $list_product[$id]['url_add_cart'] = "?mod=cat&act=add&id={$id}";
+         $list_product[$id]['url_add_cart'] = "?mod=cart&act=add&id={$id}";
+//         $list_product[$id]['url'] = "?mod=product&act=detail&id={$id}";
          return $list_product[$id];
      }
      return false;

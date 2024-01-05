@@ -3,16 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/pages/home.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/public/css/login.css</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/index.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/pages/login.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/data/users.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/public/css/style.css</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/pages/logout.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/lib/url.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/lib/users.php</file>
-            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-16/user_maneger_basic/inc/header.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/public/css/style.css</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/product/main.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/inc/sidebar.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/public/css/reset.css</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/home/main.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/inc/header.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/cart/update.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/index.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/cart/show.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/cart/add.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/data/pages.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/lib/number.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/data/products.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/modules/page/detail.php</file>
+            <file>file:/D:/Xampp/htdocs/Unitop/Back-end/Lesson/section-18/shopping_cart/lib/data.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,13 +1,17 @@
 <?php
+session_start();
+ob_start();
 #Dữ liệu
 require 'data/pages.php';
 require 'data/products.php';
 #Thư viện hàm
 require 'lib/data.php';
+require 'lib/url.php';
 require 'lib/template.php';
 require 'lib/pages.php';
 require 'lib/product.php';
 require 'lib/number.php';
+require 'lib/cart.php';
 ?>
 <?php
 
